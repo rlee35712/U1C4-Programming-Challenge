@@ -7,7 +7,7 @@ public class Solution {
     public Solution() {}
 
     public boolean endsLy(String x) {
-        if (x(-1, -2) == "ly") {
+        if (x.substring(-1, -2) == "ly") {
             return true; 
         } else { 
         return false;
@@ -15,31 +15,31 @@ public class Solution {
     }
 
     public String conCat(String s1, String s2) {
-        if (s1(-1) == s2(1)) { 
-            return (s1 + s2 - s1(-1)); 
+        if (s1.substring(-1) == s2.substring(1)) { 
+            return ((s1 + s2) - s1.substring(-1)); 
         } else { 
             return (s1 + s2); 
         }
     }
 
     public String withoutX(String s1) {
-        if (str(0) == "x") {
+        if ((s1.substring(0, 1) == "x") || (s1.substring()) {
             return ""; 
         }
         return "";
     }
 
     public String fizzString(String s1) {
-        if (s1(0) == "f") {
+        if (s1.substring(0, 1) == "f") {
             return "Fizz"; 
-        } else if (s1(-1) == "b") {
+        } else if (s1.substring(-1) == "b") {
             return "Buzz"; 
-        } else if (s1(0) =="f" && s1(-1) == "b") {
+        } else if (s1.substring(0) =="f" && s1.substring(-1) == "b") {
             return "FizzBuzz"; 
         }  else {
             return s1; 
         }
-        return "";
+        //return "";
     }
 
     public String fizzString2(int x) {
