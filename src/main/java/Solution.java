@@ -16,17 +16,20 @@ public class Solution {
 
     public String conCat(String s1, String s2) {
         if (s1.substring(-1) == s2.substring(1)) { 
-            return ((s1 + s2) - s1.substring(-1)); 
+            return (s1 + s2.substring(1)); 
         } else { 
             return (s1 + s2); 
         }
     }
 
     public String withoutX(String s1) {
-        if ((s1.substring(0, 1) == "x") || (s1.substring()) {
-            return ""; 
+        if ((s1.substring(0, 1).equals("x"))) {
+            s1 = s1.substring(1); 
         }
-        return "";
+        if (s1.substring(s1.length() - 1).equals("x")) {
+            s1 = s1.substring(0, s1.length() - 1); 
+        }
+        return s1;
     }
 
     public String fizzString(String s1) {
